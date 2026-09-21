@@ -11,7 +11,7 @@ COPY src ./src
 RUN pip install --no-cache-dir .
 
 # Audit log of sent mail; mount a volume so it survives container replacement.
-VOLUME ["/data"]
+#
 ENV DATA_DIR=/data
 
 # FastMCP keeps OAuth client registrations and the tokens it issued under its
